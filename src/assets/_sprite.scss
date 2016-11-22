@@ -1,0 +1,9 @@
+.icon {
+    fill: currentColor;
+}
+<% _.each(icons, function(icon) { %>.<%= icon.name %> {
+  font-size: <%= icon.height %>px;
+  width: <%= icon.ratio %>em;
+  height: 1em;
+}
+<% }); %>

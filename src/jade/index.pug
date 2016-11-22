@@ -1,0 +1,132 @@
+include includes/_mixins
+
+doctype html
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		title InstaLife
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='format-detection', content='telephone=no')
+		meta(name='theme-color', content='#fff')
+		link(rel='icon', type='image/png', href='favicon.ico')
+		link(rel='stylesheet', media='all', href='css/screen.css')
+		//if IE
+			script(src='js/html5shiv.js')
+	body
+		.wrapper
+			header.header
+				.container
+					.header__col
+						a.header--logo.logo(href='index.html', title='InstaLife')
+							h1.logo__title SEO
+								span.logo__title-color GAME
+							.logo__descr Сеть SEO-cтудий
+						.header__slogan
+							| Франшиза бизнеса на услугах
+							br
+							| продвижения сайтов в Яндексе и Google
+					.header__col
+						a.header__phone(href='tel:+79002715508') +7(900)271-55-08
+						a.header__btn-small.js-btn(href='#subs-form') получить мой бизнес-план
+					.header__text
+						h2.header__title
+							| Купите франшизу
+							br
+							span.header__title-color по услугам продвижения сайтов в Яндексе и Google
+						.header__descr
+							| с прибылью
+							span.header__descr--bold &nbsp;2 489 000 рублей/год
+							br
+							|  всего за
+							span.header__descr--bold &nbsp;99 000 рублей
+							br
+							span.header__descr-color с возможностью работать в любой точке Мира
+						.header__company От компании «SEOGame»
+						a.header__btn-lg.js-btn(href='#subs-form') Получить мой бизнес-план
+						.action
+							.action__title Акция!
+							.action__descr Новым партнерам Ноутбук Apple MacBook Air 13"
+							.action__terms
+								span.action__terms-color До 11 декабря
+								|  В ПОДАРОК!
+			main.main
+				.features
+					.container
+						.features__item
+							.features__item-inner
+								.features__pic
+									img.features__img(src='img/content/rocket.png', alt='Начать очень легко')
+								h3.features__title Начать очень легко
+								ul.features__list
+									li.features__list-item Не нужны сотрудники, товар, помещение и оборудование
+									li.features__list-item Старт бизнеса и первая прибыль за 28 дней
+									li.features__list-item Окупаемость 1-3 месяца
+						.features__item
+							.features__item-inner
+								.features__pic
+									img.features__img(src='img/content/lint.png', alt='Начать очень легко')
+								h3.features__title Опыт в бизнесе не нужен
+								ul.features__list
+									li.features__list-item Поможем, поддержим и расскажем
+									li.features__list-item Углубленная программа обучения
+									li.features__list-item Научим и «проведем за руку» до результата
+						.features__item
+							.features__item-inner
+								.features__pic
+									img.features__img(src='img/content/safe.png', alt='Начать очень легко')
+								h3.features__title Все твердо и надежно
+								ul.features__list
+									li.features__list-item Опыт в маркетинге — 7 лет
+									li.features__list-item Более 10 партнеров в <br>2 странах мира
+									li.features__list-item КРИЗИСоустойчевый бизнес
+				section.subs
+					.container
+						.subs__text
+							h2.subs__title Заполните форму
+							.subs__descr и получите Ваш бизнес-план через 15 секунд
+						form#subs-form.subs-form.js-form
+							.subs-form__col
+								input.subs-form__field(type='text', name='user_name', placeholder='Введите ваше имя', data-validation='required', data-validation-error-msg='Вы не ввели имя')
+							.subs-form__col
+								input.subs-form__field.js-phone-mask(type='tel', name='user_phone', placeholder='Введите ваш телефон')
+								// data-validation='required' data-validation-error-msg='Вы не ввели телефон'
+							.subs-form__col
+								input.subs-form__field(type='email', name='user_email', placeholder='Введите ваш e-mail', data-validation='email', data-validation-error-msg='Вы не ввели e-mail')
+							button.subs-form__btn(type='submit', name='submit') Получить мой бизнес-план
+					.subs-popup.js-form-success
+						.subs-popup__inner
+							.subs-popup__tnx Спасибо!
+							.subs-popup__text Сообщение успешно отправлено
+							.subs-popup__close.js-form-success-close Закрыть
+		footer.footer
+			.container
+				.footer__col
+					a.footer--logo.logo.logo--footer(href='index.html', title='InstaLife')
+						.logo__title SEO
+							span.logo__title-color GAME
+						.logo__descr Сеть SEO-cтудий
+					.footer__slogan
+						| Франшиза бизнеса на услугах&nbsp;
+						br
+						| продвижения сайтов в Яндексе и Google
+					.footer__copyright © 2009-2016
+				.footer__col
+					dl.contact
+						dt.contact__dest Звоните:
+						dd.contact__address
+							a(href='tel:+89002715508') 8(900)271-55-08
+						dt.contact__dest Viber/WhatsApp:
+						dd.contact__address
+							a(href='tel:+79002715508') +7(900)271-55-08
+						dt.contact__dest Или пишите:
+						dd.contact__address
+							a(href='mailto:info@seogame.pro') info@seogame.pro
+				.footer__col
+					dl.contact
+						dt.contact__dest Центральный офис:
+						dd.contact__address
+							| г.Москва, м. Новослободская
+							br
+							|  2-й Щетининский переулок д. 4, к.2
+						dd.contact__dest Более 10 партнеров в 2 странах мира
+		script(src='js/app.js')

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>InstaLife</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#fff">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" media="all" href="css/screen.css">
+  <!--if IEscript(src='js/html5shiv.js')
+    -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__col">
+          <a class="header--logo logo" href="index.html" title="InstaLife">
+            <h1 class="logo__title">SEO<span class="logo__title-color">GAME</span></h1>
+            <div class="logo__descr">Сеть SEO-cтудий</div>
+          </a>
+          <div class="header__slogan">Франшиза бизнеса на услугах<br>продвижения сайтов в Яндексе и Google</div>
+        </div>
+        <div class="header__col"><a class="header__phone" href="tel:+79002715508">+7(900)271-55-08</a><a class="header__btn-small js-btn" href="#subs-form">получить мой бизнес-план</a></div>
+        <div class="header__text">
+          <h2 class="header__title">Купите франшизу<br><span class="header__title-color">по услугам продвижения сайтов в Яндексе и Google</span></h2>
+          <div class="header__descr">с прибылью<span class="header__descr--bold">&nbsp;2 489 000 рублей/год</span><br> всего за<span class="header__descr--bold">&nbsp;99 000 рублей</span><br><span class="header__descr-color">с возможностью работать в любой точке Мира</span></div>
+          <div class="header__company">От компании «SEOGame»</div><a class="header__btn-lg js-btn" href="#subs-form">Получить мой бизнес-план</a>
+          <div class="action">
+            <div class="action__title">Акция!</div>
+            <div class="action__descr">Новым партнерам Ноутбук Apple MacBook Air 13"</div>
+            <div class="action__terms"><span class="action__terms-color">До 11 декабря</span> В ПОДАРОК!</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="features">
+        <div class="container">
+          <div class="features__item">
+            <div class="features__item-inner">
+              <div class="features__pic"><img class="features__img" src="img/content/rocket.png" alt="Начать очень легко"></div>
+              <h3 class="features__title">Начать очень легко</h3>
+              <ul class="features__list">
+                <li class="features__list-item">Не нужны сотрудники, товар, помещение и оборудование</li>
+                <li class="features__list-item">Старт бизнеса и первая прибыль за 28 дней</li>
+                <li class="features__list-item">Окупаемость 1-3 месяца</li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-inner">
+              <div class="features__pic"><img class="features__img" src="img/content/lint.png" alt="Начать очень легко"></div>
+              <h3 class="features__title">Опыт в бизнесе не нужен</h3>
+              <ul class="features__list">
+                <li class="features__list-item">Поможем, поддержим и расскажем</li>
+                <li class="features__list-item">Углубленная программа обучения</li>
+                <li class="features__list-item">Научим и «проведем за руку» до результата</li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-inner">
+              <div class="features__pic"><img class="features__img" src="img/content/safe.png" alt="Начать очень легко"></div>
+              <h3 class="features__title">Все твердо и надежно</h3>
+              <ul class="features__list">
+                <li class="features__list-item">Опыт в маркетинге — 7 лет</li>
+                <li class="features__list-item">Более 10 партнеров в <br>2 странах мира</li>
+                <li class="features__list-item">КРИЗИСоустойчевый бизнес</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="subs">
+        <div class="container">
+          <div class="subs__text">
+            <h2 class="subs__title">Заполните форму</h2>
+            <div class="subs__descr">и получите Ваш бизнес-план через 15 секунд</div>
+          </div>
+          <form class="subs-form js-form" id="subs-form">
+            <div class="subs-form__col">
+              <input class="subs-form__field" type="text" name="user_name" placeholder="Введите ваше имя" data-validation="required" data-validation-error-msg="Вы не ввели имя">
+            </div>
+            <div class="subs-form__col">
+              <input class="subs-form__field js-phone-mask" type="tel" name="user_phone" placeholder="Введите ваш телефон">
+              <!-- data-validation='required' data-validation-error-msg='Вы не ввели телефон'-->
+            </div>
+            <div class="subs-form__col">
+              <input class="subs-form__field" type="email" name="user_email" placeholder="Введите ваш e-mail" data-validation="email" data-validation-error-msg="Вы не ввели e-mail">
+            </div>
+            <button class="subs-form__btn" type="submit" name="submit">Получить мой бизнес-план</button>
+          </form>
+        </div>
+        <div class="subs-popup js-form-success">
+          <div class="subs-popup__inner">
+            <div class="subs-popup__tnx">Спасибо!</div>
+            <div class="subs-popup__text">Сообщение успешно отправлено</div>
+            <div class="subs-popup__close js-form-success-close">Закрыть</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__col">
+        <a class="footer--logo logo logo--footer" href="index.html" title="InstaLife">
+          <div class="logo__title">SEO<span class="logo__title-color">GAME</span></div>
+          <div class="logo__descr">Сеть SEO-cтудий</div>
+        </a>
+        <div class="footer__slogan">Франшиза бизнеса на услугах&nbsp;<br>продвижения сайтов в Яндексе и Google</div>
+        <div class="footer__copyright">© 2009-2016</div>
+      </div>
+      <div class="footer__col">
+        <dl class="contact">
+          <dt class="contact__dest">Звоните:</dt>
+          <dd class="contact__address"><a href="tel:+89002715508">8(900)271-55-08</a></dd>
+          <dt class="contact__dest">Viber/WhatsApp:</dt>
+          <dd class="contact__address"><a href="tel:+79002715508">+7(900)271-55-08</a></dd>
+          <dt class="contact__dest">Или пишите:</dt>
+          <dd class="contact__address"><a href="mailto:info@seogame.pro">info@seogame.pro</a></dd>
+        </dl>
+      </div>
+      <div class="footer__col">
+        <dl class="contact">
+          <dt class="contact__dest">Центральный офис:</dt>
+          <dd class="contact__address">г.Москва, м. Новослободская<br> 2-й Щетининский переулок д. 4, к.2</dd>
+          <dd class="contact__dest">Более 10 партнеров в 2 странах мира</dd>
+        </dl>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
